@@ -1,0 +1,58 @@
+
+@mixin flexrow() {
+	box-sizing: border-box;
+	display: flex; 
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin-right: -1rem;
+	margin-left: -1rem;
+	flex: 0 1 auto;
+}
+@mixin hover_shadow(){
+	transition: box-shadow .3s;
+	&:hover{
+		@extend .z-depth-3; 
+	}
+}
+@mixin video(){
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+	iframe {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+} 
+@mixin zeroclear(){
+	.clearfix:after{
+		display: none;
+	}
+}
+@mixin pseudoB(){
+	position: relative;
+	&:before{
+		content: '';
+	}
+} 
+@mixin pseudoA(){
+	position: relative;
+	&:after{
+		content: '';
+	}
+} 
+@mixin view-header(){
+	.view-header{
+		margin-bottom: 1.5em;
+		h2{
+			font-weight: bold;
+			font-size: 1.5em;
+		}
+		a{
+			text-align: end;
+		}
+	}
+}

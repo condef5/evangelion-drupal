@@ -1,0 +1,28 @@
+name                    = "Evangelion Drupal"  
+description = Build use bulma css
+core = 7.x 
+
+; --------------
+; CSS
+stylesheets[all][]      = css/style.css
+
+; --------------
+; JavaScript
+scripts[] = js/scripts.js
+
+; --------------
+; Regiones
+regions[second_menu]	= Menu secundario
+regions[main_menu]    	= Menu Principal 
+regions[banner]			= Banner
+regions[pre_content]    = Pre Content
+regions[bread-section]  = Breadcrum
+regions[content]        = Content
+regions[sidebar_first]  = Left Sidebar
+regions[sidebar_second] = Right Sidebar
+regions[post_content]   = Post Content
+regions[footer]   		= Footer 
+
+; --------------
+; Necessary module CSS.
+exclude[css][] = 'modules/system/system.menus.css'

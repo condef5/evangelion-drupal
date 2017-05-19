@@ -1,0 +1,45 @@
+ul li.leaf, ul li.expanded{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+ul.menu li{
+	list-style: none ;
+}
+
+/*Front message*/
+.front{
+	#first-time, #page-title{
+		display: none;
+	}
+	.tabs{
+		margin: 0;
+	}
+}
+
+/*Block*/
+.block:not(:last-child){
+	// margin: 0;
+}
+/*Tabs primary*/
+.tabs.primary{
+	margin: 0;
+	padding: 0;
+	a{
+		padding: .5em 1.5em;
+	}
+}
+/*field bulma*/
+.field:not(:last-child){
+    margin-bottom: 0;
+}
+/*form-sass*/
+.field-label{
+	text-align: left;
+}
+/* modificando container bulma*/
+@media screen and(max-width: 720px){
+	.container{
+		padding: 0 .975em;
+	}
+}
